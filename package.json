@@ -1,0 +1,13 @@
+{
+	"name": "taxable",
+	"version": "0.1.0",
+	"description": "A library of income tax calculation functions from around the world",
+	"license": "MIT",
+	"repository": "jaysonmulwa/taxable",
+	"main": "./taxable.js",
+	"keywords": [
+		"tax",
+		"taxable",
+		"paye"
+	]
+}
