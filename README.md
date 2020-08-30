@@ -1,4 +1,4 @@
-[![Logo](assets/txable.png)](https://github.com/jaysonmulwa/probabilis/)
+[![Logo](assets/taxable.png)](https://github.com/jaysonmulwa/taxable/)
 
 ![npm](https://img.shields.io/npm/v/taxable?color=green&label=taxable)
 ![npm](https://img.shields.io/npm/dy/taxable)
