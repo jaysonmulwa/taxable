@@ -3,6 +3,7 @@
 ![npm](https://img.shields.io/npm/v/taxable?color=green&label=taxable)
 [![CodeFactor](https://www.codefactor.io/repository/github/jaysonmulwa/taxable/badge)](https://www.codefactor.io/repository/github/jaysonmulwa/taxable)
 
+
 An open-source collection of Probability distribution functions.
 
 ## Installation 
