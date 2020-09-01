@@ -39,7 +39,7 @@ $ npm install taxable
   - takes in a value from (0.00 upwards)
 * insurance_relief - Insurance Relief - Refers to the insurance relief offered if it exists.
   - takes in a value from (0.00 upwards)
-* new_tier - New Rates - Whether or not to use the new rates.
+* new_rates - New Rates - Whether or not to use the new rates.
   - takes (true, false)
 * tier - Tier - This refers to the tier
   - takes values (1,2) 
