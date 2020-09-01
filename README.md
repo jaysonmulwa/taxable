@@ -64,6 +64,13 @@ console.log(result_3)
 ```
 
 
+## Contributing
+- Read the Contributing guide
+- Contact me jayson.mulwa@gmail.com for assistance
+
+[MIT](LICENSE)
+
+
 ## License
 
 [MIT](LICENSE)
