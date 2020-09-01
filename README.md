@@ -27,7 +27,7 @@ $ npm install taxable
 
 ## Full API
 
-### 1. Kenya <img src="https://static.dwcdn.net/css/flag-icons/flags/4x3/ke.svg" alt="ke" height="30"/>
+### 1. Kenya <img src="https://static.dwcdn.net/css/flag-icons/flags/4x3/ke.svg" alt="ke" height="15">
 
 #### Reference
 
