@@ -23,19 +23,7 @@ Installation is done using the
 $ npm install taxable
 ```
 
-## Usage Example
 
-```js
-
-const taxable = require('taxable')
-
-//let result = taxable.KE.NHIF({amount: 45000}) //Amount is Gross Pay
-//let result = taxable.KE.PAYE({basic_pay: 22000, benefits:22000, insurance_relief:0}) //All add up to make Gross
-//let result = taxable.KE.NSSF({amount: 9000, new_rates: true, tier: 2 }) //Amount is Gross Pay or Pensionable am
-
-console.log(result)
-
-```
 
 ## Full API
 
@@ -58,20 +46,20 @@ console.log(result)
 - 1 for nssf tier 1
 - 2 for both nssf tier 1 and 2
 
-### Usage
+### Usage Example
 
 ```js
 
 const taxable = require('taxable')
 
-let result = taxable.KE.NHIF({amount: 10000})
-console.log(result)
+let result_1 = taxable.KE.NHIF({amount: 10000})
+console.log(result_1)
 
-let result = taxable.KE.PAYE({basic_pay: 22000, benefits:2000, insurance_relief:0}) //All add up to make Gross
-console.log(result)
+let result_2 = taxable.KE.PAYE({basic_pay: 22000, benefits:2000, insurance_relief:0}) //All add up to make Gross
+console.log(result_2)
 
-let result = taxable.KE.NSSF({amount: 9000, new_rates: true, tier: 2 }) //Amount is Gross Pay or Pensionable am
-console.log(result)
+let result_3 = taxable.KE.NSSF({amount: 9000, new_rates: true, tier: 2 }) //Amount is Gross Pay or Pensionable am
+console.log(result_3)
 
 ```
 
