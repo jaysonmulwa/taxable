@@ -27,7 +27,7 @@ $ npm install taxable
 
 ## Full API
 
-### Kenya
+### 1. Kenya <img src="https://static.dwcdn.net/css/flag-icons/flags/4x3/ke.svg" alt="ke" height="30"/>
 
 #### Reference
 
@@ -46,7 +46,7 @@ $ npm install taxable
   - 1 for nssf tier 1
   - 2 for both nssf tier 1 and 2
 
-### Usage Example
+#### Usage Example
 
 ```js
 
