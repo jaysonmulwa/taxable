@@ -2,10 +2,14 @@
 
 Please ensure your pull request adheres to the following guidelines:
 
-Suggested Github Profile READMEs should be beautiful or stand out in some way.
-Make an individual pull request for each suggestion.
-Can suggest for different categories as well.
-Start the Name with a capital.
-Check your spelling and grammar.
-Make sure your text editor is set to remove trailing whitespace.
-Thank you for your suggestions!
+- Add a country under the countries folder
+- Country is by the country initials for example: KE.js, US.js, AU.js etc
+- Under this file export the calculators for that particular country
+- Add the said calculators
+- Test yor code
+- Make a pull request when done
+- Document it in the README
+- Check your spelling and grammar.
+- Contact me for further assistance: jayson.mulwa@gmail.com
+
+Thank you!
