@@ -18,7 +18,7 @@ const NSSF = (args: {
     }
 
     while (amount > 0 && counter <= max_counter) {
-      let pensionable: number = rates(counter);
+      const pensionable: number = rates(counter);
       if (amount < pensionable) {
         nssf_payable += 0.06 * amount;
         amount -= amount;

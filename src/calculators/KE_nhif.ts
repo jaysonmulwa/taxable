@@ -1,6 +1,6 @@
 const NHIF = (args: { amount: number }) => {
   let NHIF_Amount: number = 0.0;
-  let gross = args.amount;
+  const gross = args.amount;
 
   switch (true) {
     case gross <= 5999:

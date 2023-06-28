@@ -6,11 +6,11 @@ const PAYE = (args: {
   const RELIEF: number = 2400;
   let paye: number = 0.0;
   let counter: number = 1;
-  let { basicPay, benefits, insuranceRelief } = args;
+  const { basicPay, benefits, insuranceRelief } = args;
   let taxable: number = basicPay + benefits;
 
   while (taxable > 0) {
-    let [taxing, percent] = tiers(counter);
+    const [taxing, percent] = tiers(counter);
 
     if (taxable < taxing) {
       paye += (taxable * percent) / 100;
