@@ -1,25 +1,25 @@
 {
-	"name": "taxable",
-	"version": "1.0.1",
-	"description": "A library of income tax calculation functions from around the world",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/jaysonmulwa/taxable.git"
-	},
-	"main": "./taxable.js",
-	"keywords": [
-		"tax",
-		"taxable",
-		"paye",
-		"income tax"
-	],
-	"bugs": {
-		"url": "https://github.com/jaysonmulwa/taxable/issues"
-	},
-	"homepage": "https://github.com/jaysonmulwa/taxable#readme",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "jaysonmulwa"
+  "name": "taxable",
+  "version": "1.1.0",
+  "description": "A library of income tax calculation functions from around the world",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaysonmulwa/taxable.git"
+  },
+  "main": "./taxable.js",
+  "keywords": [
+    "tax",
+    "taxable",
+    "paye",
+    "income tax"
+  ],
+  "bugs": {
+    "url": "https://github.com/jaysonmulwa/taxable/issues"
+  },
+  "homepage": "https://github.com/jaysonmulwa/taxable#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jaysonmulwa"
 }
