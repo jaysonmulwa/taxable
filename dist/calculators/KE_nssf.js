@@ -31,8 +31,9 @@ const NSSF = (args) => {
         return Number(nssf_payable.toFixed(2));
     }
     else {
+        const UPPER_LIMIT = 1080;
         nssf_payable = 0.05 * amount;
-        nssf_payable = nssf_payable > 200 ? 200 : nssf_payable;
+        nssf_payable = nssf_payable > UPPER_LIMIT ? UPPER_LIMIT : nssf_payable;
         return Number(nssf_payable.toFixed(2));
     }
 };
