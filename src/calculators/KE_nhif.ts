@@ -1,5 +1,5 @@
-function NHIF(args) {
-  let NHIF_Amount = 0.0;
+const NHIF = (args: { amount: number }) => {
+  let NHIF_Amount: number = 0.0;
   let gross = args.amount;
 
   switch (true) {
@@ -82,7 +82,7 @@ function NHIF(args) {
       break;
   }
 
-  return parseFloat(NHIF_Amount).toFixed(2);
-}
+  return NHIF_Amount.toFixed(2);
+};
 
 module.exports = NHIF;

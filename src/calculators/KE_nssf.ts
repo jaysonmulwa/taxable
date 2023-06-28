@@ -1,10 +1,14 @@
-NSSF = (args) => {
-  let { amount, new_rates, tier } = args;
-  let counter = 1;
-  let max_counter = 0;
-  let nssf_payable = 0.0;
+const NSSF = (args: {
+  amount: number;
+  newRates: boolean;
+  tier: number;
+}): any => {
+  let { amount, newRates, tier } = args;
+  let counter: number = 1;
+  let max_counter: number = 0;
+  let nssf_payable: number = 0.0;
 
-  if (new_rates == true) {
+  if (newRates) {
     if (tier == 1) {
       max_counter = 1;
     } else if (tier == 2) {
@@ -14,8 +18,7 @@ NSSF = (args) => {
     }
 
     while (amount > 0 && counter <= max_counter) {
-      let pensionable = rates(counter);
-
+      let pensionable: number = rates(counter);
       if (amount < pensionable) {
         nssf_payable += 0.06 * amount;
         amount -= amount;
@@ -27,18 +30,16 @@ NSSF = (args) => {
       counter++;
     }
 
-    return parseFloat(nssf_payable).toFixed(2);
+    return nssf_payable.toFixed(2);
   } else {
     nssf_payable = 0.05 * amount;
-
     nssf_payable = nssf_payable > 200 ? 200 : nssf_payable;
-
-    return parseFloat(nssf_payable).toFixed(2);
+    return nssf_payable.toFixed(2);
   }
 };
 
-rates = (x) => {
-  pensionable = 0;
+const rates = (x: number): number => {
+  let pensionable: number = 0;
 
   switch (x) {
     case 1:

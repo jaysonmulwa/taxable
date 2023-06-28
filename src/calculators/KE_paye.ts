@@ -1,9 +1,13 @@
-PAYE = (args) => {
-  const RELIEF = 2400;
-  let paye = 0.0;
-  let counter = 1;
+const PAYE = (args: {
+  basicPay: number;
+  benefits: number;
+  insuranceRelief: number;
+}): any => {
+  const RELIEF: number = 2400;
+  let paye: number = 0.0;
+  let counter: number = 1;
   let { basicPay, benefits, insuranceRelief } = args;
-  let taxable = basicPay + benefits;
+  let taxable: number = basicPay + benefits;
 
   while (taxable > 0) {
     let [taxing, percent] = tiers(counter);
@@ -27,13 +31,13 @@ PAYE = (args) => {
   if (paye < 0) {
     return 0;
   } else {
-    return parseFloat(paye).toFixed(2);
+    return paye.toFixed(2);
   }
 };
 
-tiers = (x) => {
-  let taxing = 0;
-  let percent = 0;
+const tiers = (x: number): [number, number] => {
+  let taxing: number = 0;
+  let percent: number = 0;
 
   switch (x) {
     case 1:
@@ -58,9 +62,9 @@ tiers = (x) => {
   return [taxing, percent];
 };
 
-old_tiers = (x) => {
-  let taxing = 0;
-  let percent = 0;
+const old_tiers = (x: number): [number, number] => {
+  let taxing: number = 0;
+  let percent: number = 0;
 
   switch (x) {
     case 1:

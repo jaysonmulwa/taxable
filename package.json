@@ -7,12 +7,18 @@
     "type": "git",
     "url": "git+https://github.com/jaysonmulwa/taxable.git"
   },
-  "main": "./taxable.js",
+  "main": "./dist/taxable.js",
   "keywords": [
     "tax",
     "taxable",
     "paye",
-    "income tax"
+    "income tax",
+    "taxable income",
+    "paye",
+    "nhif",
+    "nssf",
+    "kenya tax laws",
+    "housing fund"
   ],
   "bugs": {
     "url": "https://github.com/jaysonmulwa/taxable/issues"
@@ -21,5 +27,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "jaysonmulwa"
+  "author": "jaysonmulwa",
+  "devDependencies": {
+    "@types/node": "^20.3.2"
+  }
 }
