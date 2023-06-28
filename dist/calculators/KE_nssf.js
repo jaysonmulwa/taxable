@@ -1,6 +1,7 @@
 "use strict";
 const NSSF = (args) => {
-    let { amount, newRates, tier } = args;
+    let { amount } = args;
+    const { newRates, tier } = args;
     let counter = 1;
     let max_counter = 0;
     let nssf_payable = 0.0;
@@ -12,10 +13,11 @@ const NSSF = (args) => {
             max_counter = 2;
         }
         else {
-            return "Invalid Arguments";
+            //throw new Error("Invalid tier");
+            return 0;
         }
         while (amount > 0 && counter <= max_counter) {
-            let pensionable = rates(counter);
+            const pensionable = rates(counter);
             if (amount < pensionable) {
                 nssf_payable += 0.06 * amount;
                 amount -= amount;
@@ -26,12 +28,12 @@ const NSSF = (args) => {
             }
             counter++;
         }
-        return nssf_payable.toFixed(2);
+        return Number(nssf_payable.toFixed(2));
     }
     else {
         nssf_payable = 0.05 * amount;
         nssf_payable = nssf_payable > 200 ? 200 : nssf_payable;
-        return nssf_payable.toFixed(2);
+        return Number(nssf_payable.toFixed(2));
     }
 };
 const rates = (x) => {

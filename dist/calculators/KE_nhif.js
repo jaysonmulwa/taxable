@@ -1,7 +1,7 @@
 "use strict";
 const NHIF = (args) => {
     let NHIF_Amount = 0.0;
-    let gross = args.amount;
+    const gross = args.amount;
     switch (true) {
         case gross <= 5999:
             NHIF_Amount = 150;
