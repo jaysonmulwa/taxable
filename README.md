@@ -1,7 +1,9 @@
-[![Logo](assets/taxable.png)](https://github.com/jaysonmulwa/taxable/)
-
 ![npm](https://img.shields.io/npm/v/taxable?color=green&label=taxable)
 [![CodeFactor](https://www.codefactor.io/repository/github/jaysonmulwa/taxable/badge)](https://www.codefactor.io/repository/github/jaysonmulwa/taxable)
+
+[![Logo](assets/taxable.png)](https://github.com/jaysonmulwa/taxable/)
+
+
 
 A library of income tax calculation functions from various countries around the world.
 
